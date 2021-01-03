@@ -1,0 +1,110 @@
+*{
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+}
+html,body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: 'Varela Round', sans-serif;
+}
+
+header{
+    display: flex;
+    padding: 40px 100px 40px 70px;
+    background-color: white;
+    color: rgb(122, 88, 88);
+    letter-spacing: 1px;
+    justify-content: space-between;
+}
+
+#name{
+    margin: 0;
+}
+
+#addIcon{
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.label-icons{
+    font-size: 35px;
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.light-green{
+    color: rgba(169, 247, 91, 0.856);
+}
+
+.light-blue{
+    color: rgb(175, 234, 245);
+}
+.light-purple{
+    color: rgb(187, 153, 241);
+}
+.light-pink{
+    color: rgb(253, 184, 195);
+}
+#mainContent{
+    display: flex;
+}
+#labelsNav{
+    padding:10px 20px 30px 70px;
+    width: 20%;
+    flex-grow: 0;
+}
+.labelsli{
+    margin: 20px 0;
+}
+.label-dsc{
+    margin: 0 0 0 10px;
+    font-size: 16px;
+    color: rgb(92, 65, 65);
+}
+
+#tasks{
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow:scroll; */
+    /* justify-content: space-evenly; */
+    height: 100%;
+}
+
+.task{
+    margin: 15px;
+    padding: 25px;
+    width: 420px;
+    background-color: rgb(255, 255, 203);
+    height:fit-content;
+    border-radius: 10px;
+}
+
+.task-heading{
+    color: rgb(117, 91, 91);
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.task-heading-content{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.more-options-heading{
+    position: absolute;
+    right: 0;
+    color: rgb(163, 146, 120);
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.task-content{
+    color: rgb(70, 65, 65);
+    font-weight: 500;
+}
