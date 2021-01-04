@@ -2,4 +2,4 @@
 
 Simple Jira Clone to organize and manage tasks
 
-www.akarsh-ts.github.io/task-manager
+www.akarsh-ts.github.io/task-manager/
