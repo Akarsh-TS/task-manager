@@ -1,110 +1,151 @@
 *{
-    /* border: 1px solid red; */
-    box-sizing: border-box;
+    font-family: 'Kufam', cursive;
 }
-li{
-    list-style-type: none;
+
+:root{
+    --blue: rgb(86, 56, 194);
+    --background_color:rgb(245, 245, 250);
 }
 html,body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: rgb(245, 245, 250);
     padding: 0;
     margin: 0;
     height: 100%;
-    font-family: 'Varela Round', sans-serif;
 }
 
-header{
+body{
+    width: 100%;
+}
+
+#left{
     display: flex;
-    padding: 40px 100px 40px 70px;
-    background-color: white;
-    color: rgb(122, 88, 88);
-    letter-spacing: 1px;
-    justify-content: space-between;
-}
-
-#name{
+    flex-direction: column;
     margin: 0;
-}
-
-#addIcon{
-    cursor: pointer;
-    font-size: 40px;
-}
-
-.label-icons{
-    font-size: 35px;
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
-
-.light-green{
-    color: rgba(169, 247, 91, 0.856);
-}
-
-.light-blue{
-    color: rgb(175, 234, 245);
-}
-.light-purple{
-    color: rgb(187, 153, 241);
-}
-.light-pink{
-    color: rgb(253, 184, 195);
-}
-#mainContent{
-    display: flex;
-}
-#labelsNav{
-    padding:10px 20px 30px 70px;
     width: 20%;
-    flex-grow: 0;
-}
-.labelsli{
-    margin: 20px 0;
-}
-.label-dsc{
-    margin: 0 0 0 10px;
-    font-size: 16px;
-    color: rgb(92, 65, 65);
+    background-color: white;
+    height: 100%;
 }
 
-#tasks{
-    flex-grow: 1;
+#main{
     display: flex;
-    flex-wrap: wrap;
-    /* overflow:scroll; */
-    /* justify-content: space-evenly; */
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 60px;
+}
+#right{
+    margin: 0;
+    width: 20%;
+    background-color: white;
     height: 100%;
+}
+
+#logo{
+    height: 250px;
+    width: 100%;
+}
+
+#logoContent{
+    display: inline-block;
+    margin: 100px 20px 40px 60px;
+    font-weight: 800;
+    font-size: 45px;
+}
+
+#menu{
+    padding-left: 60px;
+}
+
+#menu-heading{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 30px;
+    padding-bottom: 80px;
+    color:var(--blue);
+}
+.menu-content{
+    font-weight: 600;
+    padding: 0 20px 50px 0px;
+    color: rgb(153, 153, 153);
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+#motivation-img{
+    width: 300px;
+    height: 300px;
+}
+#main-heading{
+    display: inline-block;
+    padding: 30px 0;
+}
+
+#main-heading-content{
+    display: block;
+    font-size: 60px;
+    font-weight: 800;
+}
+#main-heading-annotation{
+    color: #b9b3b3;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#task-headings{
+    display: flex;
+    padding: 40px 0 30px 0;
+}
+#tasks-type{
+    color: var(--blue);
+    width: 80%;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    display: inline-block;
+    
+}
+#tasks-due-date{
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    display: inline-block;
+}
+#tasks{
+    height: 80%;
 }
 
 .task{
-    margin: 15px;
-    padding: 25px;
-    width: 420px;
-    background-color: rgb(255, 255, 203);
-    height:fit-content;
-    border-radius: 10px;
+    display: flex;
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 20px;
 }
 
-.task-heading{
-    color: rgb(117, 91, 91);
-    position: relative;
-    margin-bottom: 25px;
+.task-color-part{
+    padding: 20px 17px;
+    border-right: 10px solid var(--background_color);
+    
+}
+.task-color{
+    width: 20px;
+    height: 20px;
+    background-color: tomato;
+    border-radius: 50%;
 }
 
-.task-heading-content{
-    font-weight: bold;
-    letter-spacing: 1px;
+.task-content-part{
+    width: 60%;
+    font-size: 15px;
+    border-right: 10px solid var(--background_color);
+    padding: 20px 27px;
+    color: rgb(153, 153, 153);;
 }
 
-.more-options-heading{
-    position: absolute;
-    right: 0;
-    color: rgb(163, 146, 120);
-    cursor: pointer;
-    font-size: 28px;
-}
-
-.task-content{
-    color: rgb(70, 65, 65);
-    font-weight: 500;
+.task-due-date-part{
+    font-size: 15px;
+    padding: 20px 17px 20px 30px;
+    color: rgb(153, 153, 153);;
 }
