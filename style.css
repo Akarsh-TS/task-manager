@@ -131,7 +131,7 @@ body{
 .task-color{
     width: 20px;
     height: 20px;
-    background-color: tomato;
+    background-color: green;
     border-radius: 50%;
 }
 
@@ -146,5 +146,6 @@ body{
 .task-due-date-part{
     font-size: 15px;
     padding: 20px 17px 20px 30px;
-    color: rgb(153, 153, 153);;
+    color: rgb(153, 153, 153);
+    margin: auto
 }
